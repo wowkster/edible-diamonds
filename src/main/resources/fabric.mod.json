@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "edible_diamonds",
+  "version": "${version}",
+  "name": "EdibleDiamonds",
+  "description": "Makes diamonds edible!",
+  "authors": ["Wowkster"],
+  "contact": {},
+  "license": "All rights reserved",
+  "icon": "assets/edible_diamonds/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.wowkster.edible_diamonds.client.EdibleDiamondsClient"
+    ],
+    "main": [
+      "com.wowkster.edible_diamonds.EdibleDiamonds"
+    ]
+  },
+  "mixins": [
+    "edible_diamonds.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.12",
+    "fabric": "*",
+    "minecraft": "1.19.2"
+  }
+}
